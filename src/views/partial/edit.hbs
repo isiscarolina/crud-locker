@@ -1,0 +1,20 @@
+{{>footer2}}
+
+<div class="container" id="cont-edit">
+
+    <form action="/locker/edit/{{locker.id}}" method="POST">                        
+        <div class="form-group">
+            <input type="text" class="form-control" name="serial_locker" value="{{locker.serial_locker}}" >
+       </div>
+     <div class="form-group">
+         <input type="text" class="form-control" name="nome_usuario_locker" value="{{locker.nome_usuario_locker}}" autofocus>
+     </div>
+     <div class="form-group">
+         <input type="url" class="form-control" name="img" value="{{locker.img}}">
+     </div>                        
+     <div class="form-group">
+         <button class="btn btn-success btn-block"> SALVAR </button>
+     </div>
+     </form>
+     
+</div>
